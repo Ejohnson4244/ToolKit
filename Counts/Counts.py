@@ -1,6 +1,5 @@
 # Created by Ethan Johnson for use at Core Scientific
 # Python 3.9
-# "Professional Version"
 from operator import itemgetter
 import shutil
 import os
