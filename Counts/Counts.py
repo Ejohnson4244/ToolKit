@@ -89,7 +89,6 @@ def main():
                 df['company'].replace(to_replace="GEM.*", value=r"GEM", regex=True, inplace=True)
 
             elif item == 'temp':
-                print(df['temp'])
                 try:
                     df['temp'] = np.where(df['temp'] < 80, 'Good Temp', np.where(df['temp'] == 0, 'Failed to pull', np.where(df['temp'] == 255, 'Fans', np.where(df['temp'] > 80,'Over Temp', 'Failed to Pull'))))
                 except Exception as e:
